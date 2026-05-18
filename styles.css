@@ -1,3 +1,76 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    min-height: 100%;
+    position: relative;
+}
+body {
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+}
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
+    background: linear-gradient(rgba(191, 67, 222, 0.54), rgba(26, 26, 26, 0.912));
+    /*color: rgb(131, 7, 240 );   color alternativo, aún no decido*/
+}
+
+.navbar__logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.logo__img {
+    height: 35px;
+    margin-bottom: 5px;
+}
+
+.logo__name {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #f5f4eb;
+    text-decoration: none;
+}
+
+
+.links__txt {
+    text-decoration: none;
+    color: #f5f4eb;
+    transition: color 0.5s;
+    padding-right: 10px;
+    
+}
+
+.links__txt:hover {
+    color: #85f416;
+    font-weight: bold;
+}
+
+.links__txt--btn {
+    text-decoration: none;
+    background-color: #85f416;
+    color: rgb(0, 0, 0);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.links__txt--btn:hover {
+    background-color: rgb(191, 67, 222);
+    color: white;
+}
 h1 {
     color: red;
 }
